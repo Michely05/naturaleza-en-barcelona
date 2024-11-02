@@ -1,27 +1,130 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+
+<body>
+  <section class="start-section">
+    <include src="./views/navbar.html"></include>
+    <div class="welcome-message">
+      <div class="welcome-message__text">
+        <h2>Naturaleza en Barcelona</h2>
+        <p>Bienvenido a nuestra pequeña guía de los espacios naturales más emblemáticos del Barcelonès. Esta comarca,
+          situada en el
+          corazón de Cataluña, combina el encanto urbano de Barcelona con rincones de naturaleza que valen la pena
+          visitar. <br />
+          Desde rutas de senderismo en Collserola hasta paseos relajantes en el Parc de la Ciutadella, el este espacio
+          te
+          explicamos los
+          mejores lugares para disfrutar del aire libre si te encuentras en Barcelona.</p>
+        <button class="welcome-message__button">Descubrir</button>
+      </div>
+      <div class="welcome-message__image">
+        <picture>
+          <img src="./assets/images/welcome-image.jpg"
+            alt="Ilustración de un hombre caminando por un parque en una ciudad">
+        </picture>
+      </div>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </section>
+
+  <section class="collserola-section">
+    <h3 class="collserola-section__title">Parc del Collserola</h3>
+    <div class="collserola-section__content">
+      <div class="collserola-section__text">
+        <p>El Parc Natural de Collserola es un vasto espacio verde de más de 8,000 hectáreas que se extiende a lo largo
+          de
+          la sierra de Collserola, protegiendo uno de los ecosistemas más importantes y ricos en biodiversidad de la
+          región. Se le considera el "pulmón verde" de Barcelona, ya que proporciona una reserva natural vital para la
+          salud ambiental del área metropolitana. En este parque predominan bosques mediterráneos de pinos y encinas, y
+          su
+          diversidad de hábitats alberga una gran variedad de especies animales, como jabalíes, zorros, y una notable
+          población de aves. También se pueden encontrar especies de flora singulares, especialmente adaptadas a su
+          clima
+          y relieve, como el madroño y el brezo, que colorean los paisajes de este entorno montañoso.</p>
+        <p>Además de ser una reserva ecológica, Collserola representa un punto de conexión cultural e histórica. Se
+          encuentran en su territorio diversos sitios de interés como monasterios antiguos, masías y miradores que,
+          además
+          de ofrecer vistas inigualables de la ciudad y el mar, reflejan siglos de interacción entre el ser humano y el
+          paisaje natural. El parque es una joya tanto para la conservación ambiental como para la recreación y el
+          descubrimiento.</p>
+        <h4><i class="fa-solid fa-leaf"></i>¿Qué hacer?</h4>
+        <p>El parque ofrece múltiples opciones para disfrutar de la naturaleza y realizar actividades al aire libre. La
+          Carretera de les Aigües, una de las rutas más populares, se extiende por varios kilómetros y ofrece una
+          experiencia accesible para caminantes, corredores y ciclistas de todos los niveles. Este recorrido, que sigue
+          un
+          antiguo canal de agua, es conocido por sus vistas espectaculares del área metropolitana de Barcelona y su
+          fácil
+          acceso.</p>
+        <p>
+          Además, hay senderos señalizados que atraviesan diferentes zonas del parque, ideales para practicar senderismo
+          y
+          observar la fauna local. Los visitantes también pueden disfrutar de rutas en bicicleta, picnics en áreas
+          habilitadas y talleres educativos en el centro de visitantes, que se centran en la conservación y
+          sostenibilidad
+          del entorno natural.
+        </p>
+      </div>
+      <div class="collserola-section__images">
+        <div class="image-container">
+          <img src="./assets/images/collserola1.jpg" alt="Imagen 1">
+        </div>
+        <div class="image-container">
+          <img src="./assets/images/collserola2.jpg" alt="Imagen 2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ciutadella-section">
+    <h3 class="ciutadella-section__title">Parc de la Ciutadella</h3>
+    <div class="ciutadella-section__content">
+      <div class="ciutadella-section__images">
+        <div class="image-container">
+          <img src="./assets/images/ciutadella1.jpg" alt="Imagen 1">
+        </div>
+        <div class="image-container">
+          <img src="./assets/images/ciutadella2.jpg" alt="Imagen 2">
+        </div>
+      </div>
+      <div class="ciutadella-section__text">
+        <p>El Parc de la Ciutadella es uno de los principales pulmones verdes de Barcelona, un espacio de paz y
+          naturaleza que ocupa unas 17 hectáreas en el corazón de la ciudad. Su historia comienza en 1715, cuando se
+          construyó una fortaleza en este lugar, la ciudadela militar que daba nombre al área. Con el tiempo, y tras la
+          caída de la ciudadela en el siglo XIX, el terreno fue transformado en un parque para la Exposición Universal
+          de 1888. Este cambio dio a la ciudad un jardín público que hoy en día ofrece un equilibrio entre vegetación
+          frondosa y paisajes arquitectónicos.</p>
+        <p>Además de su vegetación diversa y cuidada, el parque alberga una gran cantidad de monumentos y edificios
+          históricos. La Cascada Monumental, inspirada en la Fontana di Trevi en Roma, es una obra maestra con
+          esculturas de piedra, chorros de agua y estanques. También destacan el Castillo de los Tres Dragones, diseñado
+          por el arquitecto modernista Lluís Domènech i Montaner, y el Parlamento de Cataluña, que tiene su sede en el
+          interior del parque. Los jardines, fuentes y esculturas de la Ciutadella muestran la rica mezcla de arte,
+          historia y naturaleza que este parque ofrece a los visitantes.</p>
+        <h4><i class="fa-solid fa-leaf"></i>¿Qué hacer?</h4>
+        <p>El Parc de la Ciutadella ofrece múltiples actividades para quienes desean disfrutar al aire libre. Sus
+          amplias zonas de césped invitan a realizar picnics, practicar yoga, o simplemente descansar. Es común ver a
+          músicos, artistas y deportistas aprovechar estos espacios. Además, el parque cuenta con un lago donde es
+          posible alquilar botes de remo, una experiencia muy popular entre los visitantes. Los caminos del parque son
+          ideales para pasear en bicicleta o caminar, mientras que sus zonas abiertas permiten practicar deportes de
+          equipo y organizar eventos al aire libre.</p>
+        <p>Además de estas actividades, el Parc de la Ciutadella es un lugar ideal para eventos culturales y festivales
+          a lo largo del año. Durante la primavera, el parque se llena de vida con conciertos al aire libre, ferias de
+          libros y actividades familiares que atraen a residentes y turistas por igual. Sus rincones tranquilos son
+          perfectos para la contemplación y la fotografía, haciendo de cada visita una experiencia única. En sus
+          senderos y jardines, cada visitante puede disfrutar de un momento de desconexión en medio de la bulliciosa
+          ciudad de Barcelona.</p>
+      </div>
+    </div>
+  </section>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

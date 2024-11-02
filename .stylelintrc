@@ -1,0 +1,21 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "rules": {
+    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "selector-max-id": 0,
+    "block-no-empty": true,
+    "selector-no-qualifying-type": true,
+    "string-quotes": "double",
+    "color-no-invalid-hex": true,
+    "media-query-no-invalid": true,
+    "max-nesting-depth": 2,
+    "no-duplicate-selectors": true,
+    "unit-whitelist": ["rem", "%", "px"],
+    "no-descending-specificity": true,
+    "shorthand-property-no-redundant-values": true,
+    "color-named": "never",
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-no-important": true,
+    "selector-max-compound-selectors": 3
+  }
+}

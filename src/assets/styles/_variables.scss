@@ -1,12 +1,16 @@
 @use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+$font-family-montserrat: "Montserrat", serif;
+$primary-color: #385A64;
+$secundary-color:#FF735C;
+$text-color: #1E1E1E;
+$background: #FFFFFF;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
-$mqMinWidth: 420px;
+
+// $uoc-corporate: #000078;
+// $uoc-masterbrand: #FFFFFF;
+// $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+// $mqMinWidth: 420px;
