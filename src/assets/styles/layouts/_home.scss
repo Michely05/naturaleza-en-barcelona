@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
+main {
   display: flex;
   flex-direction: column;
   margin: 0 10rem;
@@ -18,7 +20,15 @@ body {
 }
 
 .navbar {
-  padding: 2rem 0;
+  padding: 2rem 10rem;
+  position: fixed;
+  // z-index: 1000;
+  background-color: #ffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: $font-family-montserrat;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  width: 100vw;
 
   .navbar__list {
     list-style: none;
@@ -65,6 +75,7 @@ body {
 
   .navbar__dropdown-link:hover {
     font-weight: bold;
+    color: $secundary-color;
   }
 }
 
@@ -77,7 +88,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 
   .welcome-message__text {
     flex: 0.3;
@@ -124,23 +135,23 @@ body {
   }
 }
 
-.collserola-section {
+.section-a {
   height: 100vh;
   // border: 1px solid rgb(142, 0, 0);
 
-  .collserola-section__title {
+  .section-a__title {
     font-size: 2rem;
     color: $primary-color;
     margin-bottom: 2rem;
   }
 
-  .collserola-section__content {
+  .section-a__content {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
   }
 
-  .collserola-section__text {
+  .section-a__text {
     flex: 1;
     color: $text-color;
     h3,
@@ -159,7 +170,7 @@ body {
     }
   }
 
-  .collserola-section__images {
+  .section-a__images {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -181,11 +192,11 @@ body {
   }
 }
 
-.ciutadella-section {
+.section-b {
   height: 100vh;
   // border: 1px solid rgb(142, 0, 0);
 
-  .ciutadella-section__title {
+  .section-b__title {
     display: flex;
     justify-content: flex-start;
     font-size: 2rem;
@@ -193,13 +204,13 @@ body {
     margin-bottom: 2rem;
   }
 
-  .ciutadella-section__content {
+  .section-b__content {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
   }
 
-  .ciutadella-section__images {
+  .section-b__images {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -221,7 +232,7 @@ body {
     }
   }
 
-  .ciutadella-section__text {
+  .section-b__text {
     flex: 1;
     color: $text-color;
     h3,
@@ -241,8 +252,85 @@ body {
   }
 }
 
-// .uoc-footer {
-//   margin-top: 1.5rem;
-//   font-size: 0.75rem;
-//   text-align: center;
-// }
+.section-advise {
+  height: 100vh;
+
+  .section-advise__title {
+    font-size: 2rem;
+    color: $primary-color;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-advise__intro {
+    padding: 1rem;
+  }
+
+  .section-advise__content {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 3rem;
+
+    .section-advise__do,
+    .section-advise__dont {
+      flex: 1;
+      padding: 2rem;
+      border-radius: 8px;
+      background-color: #dbdbdb;
+
+      ul {
+        padding-left: 1.5rem;
+        list-style: none;
+        li {
+          font-size: 1rem;
+          line-height: 1.5;
+          padding: 0.5rem 0;
+          display: flex;
+          align-items: center;
+          .fa-check {
+            padding: 1rem;
+            color: rgb(61, 195, 12);
+          }
+          .fa-x {
+            padding: 1rem;
+            color: rgb(231, 41, 41);
+          }
+        }
+      }
+    }
+  }
+
+  .image-container-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1rem;
+    position: absolute;
+    top: 5300;
+    z-index: 1;
+  }
+
+  .image-container-end img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+  font-family: $font-family-montserrat;
+  .footer-content {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #ffff;
+    text-align: center;
+    width: 70%;
+    padding: 2rem;
+  }
+}
