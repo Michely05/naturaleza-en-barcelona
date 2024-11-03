@@ -1,16 +1,8 @@
 @use "sass:color";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 $font-family-montserrat: "Montserrat", serif;
-$primary-color: #385A64;
-$secundary-color:#FF735C;
-$text-color: #1E1E1E;
-$background: #FFFFFF;
-
-
-
-// $uoc-corporate: #000078;
-// $uoc-masterbrand: #FFFFFF;
-// $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-// $mqMinWidth: 420px;
+$primary-color: #385a64;
+$secundary-color: #ff735c;
+$text-color: #1e1e1e;
+$background: #ffffff;

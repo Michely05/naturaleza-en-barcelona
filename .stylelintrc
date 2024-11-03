@@ -12,7 +12,6 @@
     "shorthand-property-no-redundant-values": true,
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
-    "declaration-no-important": true,
-    "selector-max-compound-selectors": 4
+    "declaration-no-important": true
   }
 }
