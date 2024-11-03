@@ -35,3 +35,8 @@ document
     const section = document.getElementById("collserola");
     section.scrollIntoView({ behavior: "smooth" });
   });
+
+AOS.init({
+  duration: 1200,
+  once: true,
+});

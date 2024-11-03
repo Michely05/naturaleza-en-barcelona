@@ -7,16 +7,17 @@
   <meta name="viewport" content="width=device-width">
   <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <!-- do not remove this line! -->
   <title>Naturaleza en Barcelona</title>
 </head>
 
-<include src="./views/navbar.html"></include>
-<main>
+<body>
+  <include src="./views/navbar.html"></include>
+  <main>
 
-  <body>
     <section class="start-section" id="home">
-      <div class="welcome-message">
+      <div class="welcome-message" data-aos="fade-up">
         <div class="welcome-message__text">
           <h2>Naturaleza en Barcelona</h2>
           <p>Bienvenido a nuestra pequeña guía de los espacios naturales más emblemáticos del Barcelonès. Esta comarca,
@@ -66,7 +67,7 @@
             en áreas habilitadas y talleres educativos en el centro de visitantes, que se centran en la conservación y
             sostenibilidad del entorno natural.</p>
         </div>
-        <div class="section-a__images">
+        <div class="section-a__images" data-aos="fade-up">
           <div class="image-container">
             <img src="./assets/images/collserola1.jpg" alt="Vista montañosa desde Collserola con la torre">
           </div>
@@ -80,7 +81,7 @@
     <section class="section-b" id="ciutadella">
       <h3 class="section-b__title">Parc de la Ciutadella</h3>
       <div class="section-b__content">
-        <div class="section-b__images">
+        <div class="section-b__images" data-aos="fade-up">
           <div class="image-container">
             <img src="./assets/images/ciutadella1.jpg" alt="Personas caminando en el Parc de la Ciutadella">
           </div>
@@ -148,7 +149,7 @@
             Cataluña (MNAC) se encuentra en la montaña y ofrece una impresionante colección de obras, convirtiendo a
             Montjuïc en un destino integral para el disfrute de la naturaleza y la cultura.</p>
         </div>
-        <div class="section-a__images">
+        <div class="section-a__images" data-aos="fade-up">
           <div class="image-container">
             <img src="./assets/images/montjuic1.jpg" alt="Vistas del parque botánico en Montjuic">
           </div>
@@ -163,7 +164,7 @@
     <section class="section-b" id="guinardo">
       <h3 class="section-b__title">Parc del Guinardó</h3>
       <div class="section-b__content">
-        <div class="section-b__images">
+        <div class="section-b__images" data-aos="fade-up">
           <div class="image-container">
             <img src="./assets/images/guinardo1.jpg" alt="Vista montañosa del Parc de Guinardó con Barcelona de fondo.">
           </div>
@@ -222,7 +223,7 @@
           entornos
           y favorecer una experiencia armónica para todos los visitantes.</p>
       </div>
-      <div class="section-advise__content">
+      <div class="section-advise__content" data-aos="fade-up">
         <div class="section-advise__do">
           <ul>
             <li><i class="fa-solid fa-check"></i>Respetar la flora y fauna: Observa los animales y plantas sin
@@ -260,14 +261,15 @@
         </div>
       </div>
       <div class="image-container-end">
-        <img src="./assets/images/last-image1.png" alt="Ilustración de una joven estirada disfrutando del parque">
+        <img class="image-end" src="./assets/images/last-image1.png"
+          alt="Ilustración de una joven estirada disfrutando del parque">
       </div>
     </section>
 
-</main>
-
-<include src="./views/footer.html"></include>
-<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
